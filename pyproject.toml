@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "Project_3_job-search-with-database"
+version = "0.1.0"
+description = "Проект: работа с hh.ru API, PostgreSQL и DBManager"
+authors = ["Ваше Имя <your.email@example.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^7.0.0"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
